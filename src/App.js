@@ -1,7 +1,12 @@
 import "./App.css";
+import About from "./components/About";
 
 function App() {
-	return <div>Hey Youtube clone</div>;
+	return (
+		<div>
+			<About />
+		</div>
+	);
 }
 
 export default App;
