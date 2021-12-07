@@ -6,7 +6,9 @@ export default class Nav extends Component {
 	render() {
 		return (
 			<nav>
-				<Link to="/"> Youtube</Link>
+				<Link className="logo" exact to="/Home">
+					Youtube
+				</Link>
 				<Link to="/Home">Home</Link>
 				<Link to="/About">About</Link>
 			</nav>
