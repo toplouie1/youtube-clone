@@ -3,19 +3,25 @@
 	background-color: black;
 	color: whitesmoke;
 }
-h1 {
+h1,
+h2 {
 	background: -webkit-linear-gradient(#eee, #333);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-h1,
-p {
+h1 {
 	display: flex;
 	justify-content: center;
 	margin: 30px;
 	text-decoration: underline;
 }
-h2 {
+p {
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+}
+
+h5 {
 	text-decoration: underline;
 }
 
@@ -32,4 +38,7 @@ h2 {
 .github-links {
 	padding: 20px;
 	grid-area: second;
+}
+a {
+	color: tomato;
 }
