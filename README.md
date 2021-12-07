@@ -2,7 +2,7 @@ Trello - https://trello.com/b/JC8LKJoB/kanban-for-project-1
 
 - Youtube-clone
 
-* Memebers
+* Members
 
 - Nima Sherpa
 - Charlie Moran
