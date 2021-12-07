@@ -5,5 +5,5 @@ Trello - https://trello.com/b/JC8LKJoB/kanban-for-project-1
 * Memebers
 
 - Nima Sherpa
-- charlie Moran
+- Charlie Moran
 - Deborah Campos
