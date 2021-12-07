@@ -15,7 +15,7 @@ export default class About extends Component {
 						<h5>Nima Sherpa</h5>
 						<div>
 							Hey my name is nima sherpa I m an aspiring software developer on
-							my way to change the world.{" "}
+							my way to change the world.
 						</div>
 						<h5>Charlie Moran</h5>
 						<div>charlie bio ...</div>
