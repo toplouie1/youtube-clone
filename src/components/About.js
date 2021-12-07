@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "/Users/toplouie/Desktop/youtube-clone/src/components/About.css";
+import "./About.css";
 
 export default class About extends Component {
 	render() {
