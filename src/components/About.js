@@ -28,6 +28,16 @@ export default class About extends Component {
 						<a target="blank" href="https://github.com/toplouie1">
 							Nima GitHub
 						</a>
+						<br />
+						<br />
+						<a target="blank" href="https://github.com/CharlieMoran">
+							Charlie GitHub
+						</a>
+						<br />
+						<br />
+						<a target="blank" href="https://github.com/DeborahCampos1">
+							Deborah GitHub
+						</a>
 					</div>
 				</div>
 			</div>
