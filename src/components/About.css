@@ -1,0 +1,35 @@
+* {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: black;
+	color: whitesmoke;
+}
+h1 {
+	background: -webkit-linear-gradient(#eee, #333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+h1,
+p {
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+	text-decoration: underline;
+}
+h2 {
+	text-decoration: underline;
+}
+
+.about-contains {
+	display: grid;
+	grid-template-areas: "first second";
+}
+.members-about {
+	border-right: 2px solid rgb(0, 0, 0);
+	margin-left: 40px;
+	grid-area: first;
+	padding: 20px;
+}
+.github-links {
+	padding: 20px;
+	grid-area: second;
+}
