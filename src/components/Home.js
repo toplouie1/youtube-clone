@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Youtube from 'react-youtube';
+import "./Home.css"
 
 
 export default class Home extends Component {
@@ -37,10 +38,16 @@ export default class Home extends Component {
 	render() {
 		let videos = this.state.fetchdata.map((vid)=>{
 			return (
-				<Youtube videoId={vid.id.videoId} opts={{height: '200', width:'400'}} />
+				<div>
+					<div>
+					<Youtube videoId={vid.id.videoId} opts={{height: '200', width:'400'}} />
+					</div>
+					<div className="title">{vid.snippet.title}</div>
+				</div>
+			
 				)
 		})
-		console.log(videos)
+		console.log(this.state.fetchdata)
 		return (
 			<div>
 				<form onSubmit={this.fetchSearchVid}>
@@ -54,7 +61,6 @@ export default class Home extends Component {
 				</form>
 
 				<div id="display-container" className="video-container">
-					This is where the videos display
 					<div className="video">
 						{videos}
 					</div>

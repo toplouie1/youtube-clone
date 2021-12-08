@@ -1,0 +1,7 @@
+.video{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.title{
+    margin: 20px;
+}
