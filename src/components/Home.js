@@ -9,7 +9,8 @@ export default class Home extends Component {
 
 	 this.state = {
 		 searchValue: "",
-		 fetchdata: []
+		 fetchdata: [],
+		 noResults:"No Search Results Yet! Please submit a search above!"
 
 	 }
  }
@@ -28,7 +29,8 @@ export default class Home extends Component {
 		 return res.json();
 	 }).then((data)=>{
 		 this.setState({
-			 fetchdata: data.items
+			 fetchdata: data.items,
+			 noResults: ""
 		 });
 	 });
  }
@@ -61,6 +63,7 @@ export default class Home extends Component {
 				</form>
 
 				<div id="display-container" className="video-container">
+					{/* <div id="no-results">{this.state.noResults}</div> */}
 					<div id="video">
 						{videos}
 					</div>

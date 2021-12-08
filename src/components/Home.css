@@ -13,3 +13,17 @@
     /* margin: 20px; */
     background-color: blueviolet;
 }
+#no-results{
+    border-style: solid 1px;
+    border-color: black;
+    border-radius: 5px;
+    width: 666px;
+    height: 30px;
+    position: fixed;
+    top: 18%;
+    left:30%;
+    transform: translate(-18%, -30%);
+    background-color: grey;
+    padding: 20px;
+    justify-content: center;
+}
