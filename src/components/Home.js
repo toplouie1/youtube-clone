@@ -70,18 +70,6 @@ export default class Home extends Component {
 						{videos}
 					</div>
 				</div>
-
-				<input
-					placeholder="   ariana grande"
-					type="text"
-					id="search"
-					className="search"
-				/>
-				<button type="submit" className="submit">Search</button>
-
-				<div class="video-container">
-					this is where videos display 
-				</div>
 			</div>
 		);
 	}
