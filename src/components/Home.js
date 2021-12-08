@@ -43,17 +43,14 @@ export default class Home extends Component {
 			return (
 				<div>
 					<div className="vid">
-					<Youtube videoId={vid.id.videoId} opts={{height: '200', width:'400'}} />
+						<Youtube videoId={vid.id.videoId} opts={{height: '200', width:'400'}} />
 					</div>
 					<div className="title">{vid.snippet.title}</div>
 				</div>
-			
 				)
 		})
-		console.log(this.state.fetchdata)
 		return (
 			<div>
-
 				<form onSubmit={this.fetchSearchVid}>
 					<input onInput={this.setSearch}
 						placeholder="enter search here"
