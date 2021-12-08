@@ -3,6 +3,7 @@ import About from "./components/About";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import { Switch, Route } from "react-router-dom";
+import Youtube from 'react-youtube';
 
 function App() {
 	return (
@@ -18,3 +19,5 @@ function App() {
 			</Switch>
 		</div>
 	)};
+
+export default App 
