@@ -11,7 +11,8 @@
 }
 .title{
     /* margin: 20px; */
-    background-color: blueviolet;
+    background-color: lightgray;
+    padding: 5px;
 }
 #no-results{
     border-style: solid 1px;
