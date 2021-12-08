@@ -6,7 +6,7 @@ export default class Home extends Component {
 		return (
 			<div>
 				<input
-					placeholder="Ariana grande"
+					placeholder="   ariana grande"
 					type="text"
 					id="search"
 					className="search"
