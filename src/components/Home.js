@@ -13,7 +13,9 @@ export default class Home extends Component {
 				/>
 				<button type="submit" className="submit">Search</button>
 
-				<div class="video-container"></div>
+				<div class="video-container">
+					this is where videos display 
+				</div>
 			</div>
 		);
 	}
