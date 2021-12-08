@@ -1,11 +1,20 @@
-import './App.css';
+import "./App.css";
+import About from "./components/About";
+import Nav from "./components/Nav";
+import Home from "./components/Home";
+import { Switch, Route } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      YouTubeCloneGoesHere!!
-    </div>
-  );
-}
-
-export default App;
+	return (
+		<div>
+			<Nav />
+			<Switch>
+				<Route exact path="/">
+					<Home />
+				</Route>
+				<Route path="/About">
+					<About />
+				</Route>
+			</Switch>
+		</div>
+	);

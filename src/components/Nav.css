@@ -1,0 +1,22 @@
+nav {
+	display: flex;
+	justify-content: flex-start;
+	background-color: red;
+}
+.logo {
+	font-size: 22px;
+	padding: 20px 15px;
+	margin-top: -4px;
+}
+
+nav a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	padding: 20px 15px;
+	background-color: red;
+	font-weight: 400;
+	transition: 0.3s ease-in;
+}
+nav a:hover {
+	color: black;
+}
