@@ -11,16 +11,15 @@ export default class Home extends Component {
 		 searchValue: "",
 		 fetchdata: [],
 		 noResults:"No Search Results Yet! Please submit a search above!"
-
 	 }
  }
 
  setSearch=(e)=>{
 	 this.setState({
 		 searchValue: e.target.value
-
 	 })
  }
+
  fetchSearchVid=(e)=>{
 	 e.preventDefault();
 
@@ -35,18 +34,15 @@ export default class Home extends Component {
 	 });
  }
 
-  
- 
 	render() {
 		let videos = this.state.fetchdata.map((vid)=>{
 			return (
-				<div>
-					<div className="vid">
-					<Youtube videoId={vid.id.videoId} opts={{height: '200', width:'400'}} />
+					<div>
+						<div className="vid">
+							<Youtube videoId={vid.id.videoId} opts={{height: '200', width:'400'}} />
+						</div>
+						<div className="title">{vid.snippet.title}</div>
 					</div>
-					<div className="title">{vid.snippet.title}</div>
-				</div>
-			
 				)
 		})
 		console.log(this.state.fetchdata)
@@ -61,7 +57,6 @@ export default class Home extends Component {
 					/>
 					<button type="submit">Search</button>
 				</form>
-
 				<div id="display-container" className="video-container">
 					{/* <div id="no-results">{this.state.noResults}</div> */}
 					<div id="video">
