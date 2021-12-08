@@ -15,7 +15,7 @@
     justify-content: center;
     text-align: left;
     background-color: white;
-    color: black;
+    color: white;
     
 }
 
@@ -29,4 +29,5 @@
     transform: translate(-20.3%, -70%);
     justify-content: center;
     background-color: red;
+    color: white;
 }
