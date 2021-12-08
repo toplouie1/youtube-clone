@@ -39,7 +39,7 @@ export default class Home extends Component {
 		let videos = this.state.fetchdata.map((vid)=>{
 			return (
 				<div>
-					<div>
+					<div className="vid">
 					<Youtube videoId={vid.id.videoId} opts={{height: '200', width:'400'}} />
 					</div>
 					<div className="title">{vid.snippet.title}</div>
@@ -61,7 +61,7 @@ export default class Home extends Component {
 				</form>
 
 				<div id="display-container" className="video-container">
-					<div className="video">
+					<div id="video">
 						{videos}
 					</div>
 				</div>
