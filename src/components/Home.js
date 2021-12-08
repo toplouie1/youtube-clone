@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import Youtube from 'react-youtube';
 import "./Home.css"
 
@@ -52,6 +53,7 @@ export default class Home extends Component {
 		console.log(this.state.fetchdata)
 		return (
 			<div>
+
 				<form onSubmit={this.fetchSearchVid}>
 					<input onInput={this.setSearch}
 						placeholder="enter search here"
@@ -68,6 +70,16 @@ export default class Home extends Component {
 						{videos}
 					</div>
 				</div>
+
+				<input
+					placeholder="   ariana grande"
+					type="text"
+					id="search"
+					className="search"
+				/>
+				<button type="submit" className="submit">Search</button>
+
+				<div class="video-container"></div>
 			</div>
 		);
 	}
