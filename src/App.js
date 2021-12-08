@@ -10,10 +10,10 @@ function App() {
 		<div>
 			<Nav />
 			<Switch>
-				<Route exact path="/Home">
+				<Route exact path="/">
 					<Home />
 				</Route>
-				<Route exact path="/About">
+				<Route path="/About">
 					<About />
 				</Route>
 			</Switch>
