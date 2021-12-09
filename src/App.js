@@ -4,7 +4,6 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import { Switch, Route } from "react-router-dom";
 
-import Youtube from 'react-youtube';
 
 // import YouTube from "react-youtube";
 
@@ -25,6 +24,5 @@ function App() {
 	)};
 
 export default App 
-	);
-}
+
 
