@@ -1,3 +1,35 @@
+#display-container{
+    text-align: center;
+}
+#video{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+.vid{
+    margin: 20px;
+}
+.title{
+    margin:  10px 60px;
+    background-color: lightgray;
+    padding: 5px;
+    text-align: center;
+}
+#no-results{
+    border-style: solid 1px;
+    border-color: black;
+    border-radius: 5px;
+    width: 666px;
+    height: 30px;
+    position: fixed;
+    top: 18%;
+    left:30%;
+    transform: translate(-18%, -30%);
+    background-color: grey;
+    padding: 20px;
+    justify-content: center;
+}
+
 * {
 	background-color: white;
 }
@@ -29,3 +61,4 @@
 	justify-content: center;
 	background-color: red;
 }
+
