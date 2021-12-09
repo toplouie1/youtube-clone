@@ -56,7 +56,7 @@ export default class Home extends Component {
 					<input
 						className="search"
 						onInput={this.setSearch}
-						placeholder="Search"
+						placeholder="Search..."
 						type="text"
 						id="search"
 						name="search"
