@@ -45,7 +45,7 @@ export default class Home extends Component {
 	};
 
 	render() {
-		console.log(this.state.vidId);
+		console.log(this.fetchdata);
 		let videos = this.state.fetchdata.map((vid) => {
 			return (
 				<div>
