@@ -19,9 +19,6 @@ function App() {
 				<Route path="/About">
 					<About />
 				</Route>
-				<Route path="/About">
-					<About />
-				</Route>
 			</Switch>
 		</div>
 	);
