@@ -42,15 +42,18 @@
 	position: absolute;
 	top: 10%;
 	left: 30%;
+	border: 1px solid rgb(211, 197, 197);
 }
 
 .submit {
 	border-radius: 5px;
 	width: 110px;
-	height: 38px;
+	height: 36px;
 	position: absolute;
-	top: 10%;
-	left: 59.9%;
+	top: 9.7%;
+	left: 64.9%;
+	border: none;
+	cursor: pointer;
 	justify-content: center;
 	background-color: red;
 }
