@@ -30,6 +30,9 @@
 	justify-content: center;
 	margin-left: 300px;
 }
+#after-results {
+	display: none;
+}
 
 .search {
 	border-style: solid 1px;
@@ -59,8 +62,8 @@
 	background-color: red;
 	color: white;
 }
-#form-container{
+#form-container {
 	justify-content: center;
-	margin-left: 300px;;
+	margin-left: 300px;
 	padding: 25px;
 }

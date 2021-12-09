@@ -83,6 +83,7 @@ export default class Home extends Component {
 						</span>
 					</form>
 				</div>
+				{/* <div id="no-results">{this.state.noResults}</div> */}
 				<div id="display-container" className="video-container">
 					{/* <div id="no-results">{this.state.noResults}</div> */}
 					<div id="video">{videos}</div>

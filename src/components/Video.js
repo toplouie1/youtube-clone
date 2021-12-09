@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Video.css";
 import Youtube from "react-youtube";
 
-export default class video extends Component {
+export default class Video extends Component {
 	render() {
 		return (
 			<div>
