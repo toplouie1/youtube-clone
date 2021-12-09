@@ -24,7 +24,7 @@ export default class About extends Component {
 						<div>Hello! My name is Charlie and I am a banana! 🍌</div>
 
 						<h5>Deborah Campos</h5>
-						<div>deborah bio ...</div>
+						<div>My name is Deborah and I am a software developer fellow at Pursuit.</div>
 					</div>
 					<div className="github-links">
 						<h2>GitHub Links</h2>

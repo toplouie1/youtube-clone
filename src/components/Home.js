@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-
-import Youtube from "react-youtube";
+// import Youtube from "react-youtube";
 import "./Home.css";
 
 export default class Home extends Component {
@@ -11,6 +10,7 @@ export default class Home extends Component {
 			searchValue: "",
 			fetchdata: [],
 			noResults: "No Search Results Yet! Please submit a search above!",
+			vidId: ""
 		};
 	}
 
@@ -37,15 +37,25 @@ export default class Home extends Component {
 		console.log(process.env);
 	};
 
+	viewVideo=(e)=>{
+		this.setState({
+			vidId: e.id.videoId
+		});
+	}
+
 	render() {
+		console.log(this.state.vidId)
 		let videos = this.state.fetchdata.map((vid) => {
 			return (
 				<div>
 					<div className="vid">
-						<Youtube
-							videoId={vid.id.videoId}
+						<div value={vid.id.videoId} onClick={()=>this.viewVideo(vid)}>
+							<img src={vid.snippet.thumbnails.high.url} alt ={vid.snippet.title}/>
+						</div>
+						{/* <Youtube
+							// videoId={this.props.vidId}
 							opts={{ height: "200", width: "400" }}
-						/>
+						/> */}
 					</div>
 					<div className="title">{vid.snippet.title}</div>
 				</div>
@@ -53,7 +63,9 @@ export default class Home extends Component {
 		});
 		return (
 			<div>
+				<div id="form-container">
 				<form onSubmit={this.fetchSearchVid}>
+					<span>
 					<input
 						className="search"
 						onInput={this.setSearch}
@@ -62,11 +74,14 @@ export default class Home extends Component {
 						id="search"
 						name="search"
 					/>
-					<button className="submit" type="submit">
+					</span>
+					<span><button className="submit" type="submit">
 						Search
 					</button>
+					</span>
 				</form>
 
+				</div>
 				<div id="display-container" className="video-container">
 					{/* <div id="no-results">{this.state.noResults}</div> */}
 					<div id="video">{videos}</div>
