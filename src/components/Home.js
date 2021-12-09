@@ -9,8 +9,7 @@ export default class Home extends Component {
 		this.state = {
 			searchValue: "",
 			fetchdata: [],
-			noResults: "No Search Results Yet! Please submit a search above!",
-			vidId: "",
+			toggle: true,
 		};
 	}
 
@@ -31,26 +30,20 @@ export default class Home extends Component {
 			.then((data) => {
 				this.setState({
 					fetchdata: data.items,
-					noResults: "",
+					toggle: false,
 				});
 			});
-		console.log(process.env);
-	};
-
-	viewVideo = (e) => {
-		this.setState({
-			vidId: e.id.videoId,
-		});
 	};
 
 	render() {
 		console.log(this.state.vidId);
+		console.log(this.state.fetchdata);
 		let videos = this.state.fetchdata.map((vid) => {
 			return (
 				<div>
 					<div className="vid">
-						<div value={vid.id.videoId} onClick={() => this.viewVideo(vid)}>
-							<Link to="/Video/:id">
+						<div>
+							<Link to={`/Video/${vid.id.videoId}`}>
 								<img
 									src={vid.snippet.thumbnails.high.url}
 									alt={vid.snippet.title}
@@ -83,9 +76,13 @@ export default class Home extends Component {
 						</span>
 					</form>
 				</div>
-				{/* <div id="no-results">{this.state.noResults}</div> */}
+				<div
+					id="no-results"
+					style={{ display: this.state.toggle ? "block" : "none" }}
+				>
+					{"No Search Results Yet! Please submit a search above!"}
+				</div>
 				<div id="display-container" className="video-container">
-					{/* <div id="no-results">{this.state.noResults}</div> */}
 					<div id="video">{videos}</div>
 				</div>
 			</div>

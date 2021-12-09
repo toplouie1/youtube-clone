@@ -4,11 +4,12 @@ import Youtube from "react-youtube";
 
 export default class Video extends Component {
 	render() {
+		console.log(this.props.match.params.id);
 		return (
 			<div>
 				<Youtube
 					className="videoss"
-					videoId={this.props.vidId}
+					videoId={this.props.match.params.id}
 					opts={{ height: "600", width: "1000" }}
 				/>
 				<div className="commentsContainer">
