@@ -2,13 +2,13 @@ nav {
 	display: flex;
 	justify-content: flex-start;
 	background-color: red;
+	border-radius: 10px;
 }
 .logo {
+	border-radius: 10px;
 	font-size: 22px;
-	padding: 20px 15px;
-	margin-top: -4px;
+	padding: 15px 15px;
 }
-
 nav a {
 	color: rgb(255, 255, 255);
 	text-decoration: none;
