@@ -1,0 +1,42 @@
+.name {
+	border-style: solid 1px;
+	border-radius: 5px;
+	width: 666px;
+	height: 30px;
+	justify-content: center;
+	text-align: left;
+	border: 1px solid rgb(211, 197, 197);
+	margin: 10px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 1e-9px;
+}
+
+.submitVideo {
+	border-radius: 5px;
+	margin: 10px;
+	width: 110px;
+	height: 36px;
+	border: none;
+	cursor: pointer;
+	justify-content: center;
+	background-color: rgb(49, 44, 145);
+	color: white;
+}
+
+.labels {
+	margin-left: 10px;
+}
+
+.inputContainer {
+	margin-top: 100px;
+}
+
+.commentsSection {
+	margin: 20px;
+}
+.commentsContainer {
+	justify-content: center;
+	display: flex;
+	justify-content: center;
+}
