@@ -4,7 +4,6 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import { Switch, Route } from "react-router-dom";
 
-
 // import YouTube from "react-youtube";
 
 function App() {
@@ -21,9 +20,7 @@ function App() {
 				</Route>
 			</Switch>
 		</div>
+	);
+}
 
-	)};
-
-export default App 
-
-
+export default App;
