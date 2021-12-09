@@ -21,10 +21,8 @@
 	border-radius: 5px;
 	width: 475px;
 	height: 30px;
-	/* position: fixed; */
 	top: 10%;
-	left: 30%;
-	transform: translate(-18%, -30%);
+	left: 60%;
 	background-color: grey;
 	padding: 20px;
 	justify-content: center;
@@ -43,7 +41,6 @@
 	left: 30%;
 	justify-content: center;
 	text-align: left;
-	/* position: absolute; */
 	top: 10%;
 	left: 30%;
 	border: 1px solid rgb(211, 197, 197);
@@ -53,7 +50,6 @@
 	border-radius: 5px;
 	width: 110px;
 	height: 36px;
-	/* position: absolute; */
 	top: 9.7%;
 	left: 64.9%;
 	border: none;

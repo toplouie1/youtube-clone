@@ -2,7 +2,9 @@
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	background-color: white;
 	color: rgb(0, 0, 0);
-
+}
+.about-main {
+	background-color: black;
 }
 h1,
 h2 {
