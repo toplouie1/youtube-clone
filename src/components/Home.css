@@ -8,7 +8,7 @@
 }
 .vid {
 	margin: 20px;
-	margin-top: 10rem;
+	margin-top: 2rem;
 }
 .title {
 	margin: 10px 60px;
@@ -19,27 +19,28 @@
 	border-style: solid 1px;
 	border-color: black;
 	border-radius: 5px;
-	width: 666px;
+	width: 475px;
 	height: 30px;
-	position: fixed;
+	/* position: fixed; */
 	top: 10%;
 	left: 30%;
 	transform: translate(-18%, -30%);
 	background-color: grey;
 	padding: 20px;
 	justify-content: center;
+	margin-left: 300px;
 }
 
 .search {
 	border-style: solid 1px;
 	border-radius: 5px;
-	width: 666px;
+	width: 475px;
 	height: 30px;
 	top: 10%;
 	left: 30%;
 	justify-content: center;
 	text-align: left;
-	position: absolute;
+	/* position: absolute; */
 	top: 10%;
 	left: 30%;
 	border: 1px solid rgb(211, 197, 197);
@@ -49,7 +50,7 @@
 	border-radius: 5px;
 	width: 110px;
 	height: 36px;
-	position: absolute;
+	/* position: absolute; */
 	top: 9.7%;
 	left: 64.9%;
 	border: none;
@@ -57,4 +58,9 @@
 	justify-content: center;
 	background-color: red;
 	color: white;
+}
+#form-container{
+	justify-content: center;
+	margin-left: 300px;;
+	padding: 25px;
 }
