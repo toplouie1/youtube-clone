@@ -1,12 +1,17 @@
 import React, { Component } from "react";
 import "./Video.css";
+import Youtube from "react-youtube";
 
 export default class video extends Component {
 	render() {
 		return (
 			<div>
+				<Youtube
+					className="videoss"
+					videoId={this.props.vidId}
+					opts={{ height: "600", width: "1000" }}
+				/>
 				<div className="commentsContainer">
-					<div>Video will be played here ...</div>
 					<form className="inputContainer">
 						<label className="labels" htmlFor="Name">
 							Name
