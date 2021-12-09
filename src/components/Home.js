@@ -34,6 +34,7 @@ export default class Home extends Component {
 					noResults: "",
 				});
 			});
+		console.log(process.env);
 	};
 
 	viewVideo=(e)=>{

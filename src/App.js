@@ -4,8 +4,8 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import { Switch, Route } from "react-router-dom";
 
+function App() {
 
-function App () {
 	return (
 		<div>
 			<Nav />
@@ -16,11 +16,12 @@ function App () {
 				<Route path="/About">
 					<About />
 				</Route>
+				<Route path="/About">
+					<About />
+				</Route>
 			</Switch>
 		</div>
+	);
+}
 
-	)};
-
-export default App 
-
-
+export default App;
