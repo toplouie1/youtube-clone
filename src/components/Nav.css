@@ -1,28 +1,36 @@
+* {
+	background-color: #282828;
+}
 nav {
 	display: flex;
 	justify-content: flex-start;
-	background-color: #262323;
-
-	border-radius: 10px;
+	background-color: #282828;
+	width: 100%;
+	border-bottom: 1px solid grey;
 }
 .logo {
+	display: flex;
 	border-radius: 10px;
 	font-size: 22px;
 	padding: 16px 20px;
-	background-color: #262323;
-	top: 0;
+	background-color: #282828;
+	font-family: 800;
 }
-img {
-	width: 20px;
+.logo-name {
+	top: 3px;
+	text-align: center;
+}
+.logo img {
+	width: 30px;
 }
 nav a {
 	color: rgb(255, 255, 255);
 	text-decoration: none;
 	padding: 20px 15px;
-	background-color: #262323;
+	background-color: #282828;
 	font-weight: 400;
 	transition: 0.3s ease-in;
 }
 nav a:hover {
-	color: tomato;
+	color: #ff0000;
 }
