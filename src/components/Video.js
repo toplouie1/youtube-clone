@@ -21,6 +21,7 @@ export default class Video extends Component {
 								className="name"
 								placeholder="Name..."
 								type="text"
+								onInput={this.nameComments}
 								id="Name"
 								name="search"
 							/>
@@ -31,10 +32,11 @@ export default class Video extends Component {
 							<br />
 							<input
 								className="name"
+								onInput={this.nameComments}
 								placeholder="..."
 								type="text"
 								id="Comment"
-								name="Comment"
+								name="comment"
 							/>
 						</label>
 						<br />
