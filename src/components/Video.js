@@ -4,13 +4,12 @@ import Youtube from "react-youtube";
 
 export default class Video extends Component {
 	render() {
-		console.log(this.props.match.params.id);
 		return (
 			<div>
 				<Youtube
 					className="videoss"
 					videoId={this.props.match.params.id}
-					opts={{ height: "600", width: "1000" }}
+					opts={{ height: "700", width: "1000" }}
 				/>
 				<div className="commentsContainer">
 					<form className="inputContainer">
@@ -27,6 +26,7 @@ export default class Video extends Component {
 							/>
 						</label>
 						<br />
+						<br />
 						<label className="labels" htmlFor="Comment">
 							Comment
 							<br />
@@ -39,6 +39,7 @@ export default class Video extends Component {
 								name="comment"
 							/>
 						</label>
+						<br />
 						<br />
 						<button className="submitVideo" type="submit">
 							Search
