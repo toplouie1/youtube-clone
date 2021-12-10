@@ -13,7 +13,12 @@ function App() {
 				<Route exact path="/">
 					<Home />
 				</Route>
-				<Route path="/Video/:id" component={Video} />
+				<Route exact path="/Video/:id">
+					<Video />
+				</Route>
+				<Route path="/About">
+					<About />
+				</Route>
 				<Route path="/About">
 					<About />
 				</Route>
