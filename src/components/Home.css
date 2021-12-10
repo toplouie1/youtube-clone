@@ -27,7 +27,7 @@
 	background-color: grey;
 	padding: 10px;
 	justify-content: center;
-	margin-left: 624px;
+	margin-left: 31.4%;
 	opacity: 0.8;
 }
 
@@ -42,8 +42,6 @@
 	height: 30px;
 	justify-content: center;
 	text-align: left;
-	top: 10%;
-	left: 30%;
 	padding: 2px;
 	border: 1px solid grey;
 	background-color: white;
@@ -52,8 +50,6 @@
 .submit {
 	width: 110px;
 	height: 36px;
-	top: 9.7%;
-	left: 64.9%;
 	border: 1px solid grey;
 	border-left: none;
 	cursor: pointer;
@@ -69,16 +65,7 @@
 #form-container {
 	top: 0;
 	justify-content: center;
-	margin-left: 600px;
+	margin-left: 30%;
 	padding: 25px;
 	padding-top: 100px;
-}
-
-.searchBtn {
-	margin-top: 200px;
-	grid-template-columns: auto;
-	position: fixed;
-	top: 2%;
-	left: 30%;
-	transform: translate(-20.3%, -70%);
 }
