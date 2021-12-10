@@ -59,7 +59,7 @@
 	cursor: pointer;
 	justify-content: center;
 	background-color: yellow;
-	color: white;
+	color: black;
 	transition: 0.3s ease-in;
 }
 .submit:hover {
@@ -75,10 +75,10 @@
 }
 
 .searchBtn {
-    margin-top: 200px;
-    grid-template-columns: auto;
-    position: fixed;
-    top:2%;
-    left:30%;
-    transform: translate(-20.3%, -70%);
+	margin-top: 200px;
+	grid-template-columns: auto;
+	position: fixed;
+	top: 2%;
+	left: 30%;
+	transform: translate(-20.3%, -70%);
 }
