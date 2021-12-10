@@ -4,13 +4,17 @@ import Youtube from "react-youtube";
 
 export default class Video extends Component {
 	render() {
+
+		console.log(this.props)
 		return (
+			
 			<div>
 				<Youtube
 					className="videoss"
 					videoId={this.props.match.params.id}
-					opts={{ height: "700", width: "1000" }}
+					opts={{ height: "600", width: "1000" }}
 				/>
+				<div id="title-placeholder">{this.props.videoObject.snippet.title}</div>
 				<div className="commentsContainer">
 					<form className="inputContainer">
 						<label className="labels" htmlFor="Name">

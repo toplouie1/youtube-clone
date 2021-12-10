@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Home.css";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom"
 
 export default class Home extends Component {
 	constructor() {
@@ -18,11 +18,12 @@ export default class Home extends Component {
 			searchValue: e.target.value,
 		});
 	};
+  
 	fetchSearchVid = (e) => {
 		e.preventDefault();
 
 		fetch(
-			`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${this.state.searchValue}&type=video&key=${process.env.REACT_APP_API_KEY}`
+			`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${this.state.searchValue}&type=video&key=AIzaSyAy4drePBpLUxVGLeDlqaOi3PMlu1mSmMU`
 		)
 			.then((res) => {
 				return res.json();
@@ -30,19 +31,21 @@ export default class Home extends Component {
 			.then((data) => {
 				this.setState({
 					fetchdata: data.items,
-					toggle: false,
+					searchValue: "",
+          toggle: false
 				});
 			});
 	};
 
+
 	render() {
-		console.log(this.state.vidId);
-		console.log(this.state.fetchdata);
+
 		let videos = this.state.fetchdata.map((vid) => {
 			return (
 				<div>
 					<div className="vid">
-						<div>
+        
+						<div onClick={()=>this.props.updateVideoObject(vid)}>
 							<Link to={`/Video/${vid.id.videoId}`}>
 								<img
 									className="thumbnail-container"
@@ -59,23 +62,24 @@ export default class Home extends Component {
 		return (
 			<div>
 				<div id="form-container">
-					<form onSubmit={this.fetchSearchVid}>
-						<span>
-							<input
-								className="search"
-								onInput={this.setSearch}
-								placeholder="Search..."
-								type="text"
-								id="search"
-								name="search"
-							/>
-						</span>
-						<span>
-							<button className="submit" type="submit">
-								Search
-							</button>
-						</span>
-					</form>
+				<form onSubmit={this.fetchSearchVid}>
+					<span>
+					<input
+						className="search"
+						onInput={this.setSearch}
+						placeholder="Search..."
+						type="text"
+						id="search"
+						name="search"
+						value={this.state.searchValue}
+					/>
+					</span>
+					<span><button className="submit" type="submit">
+						Search
+					</button>
+					</span>
+				</form>
+
 				</div>
 				<div
 					id="no-results"
