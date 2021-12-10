@@ -23,7 +23,7 @@ export default class Home extends Component {
 		e.preventDefault();
 
 		fetch(
-			`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${this.state.searchValue}&type=video&key=AIzaSyAy4drePBpLUxVGLeDlqaOi3PMlu1mSmMU`
+			`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${this.state.searchValue}&type=video&key=${process.env.REACT_APP_API_KEY}`
 		)
 			.then((res) => {
 				return res.json();
