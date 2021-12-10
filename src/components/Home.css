@@ -73,3 +73,12 @@
 	padding: 25px;
 	padding-top: 100px;
 }
+
+.searchBtn {
+    margin-top: 200px;
+    grid-template-columns: auto;
+    position: fixed;
+    top:2%;
+    left:30%;
+    transform: translate(-20.3%, -70%);
+}

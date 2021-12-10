@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+  background: #070606e8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banana {
+  color: yellow;
+  font-size: 2rem;
+  padding: 1rem;
+  animation: fall 2s linear forwards infinite;
+  animation-delay: 1s;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-10vh);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+.master{
+  color:white;
+  float:right;
+}
+
+@media only screen and (max-width: 800px) {
+  .banana {
+    font-size: 1rem;
+    animation-delay: 0s;
+  }
+  
+  .master{
+    display:none;
+  }
+}
