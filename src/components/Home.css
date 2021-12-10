@@ -63,6 +63,7 @@
 	transition: 0.3s ease-in;
 }
 .submit:hover {
+	color: white;
 	background-color: rgb(17, 16, 16);
 }
 
