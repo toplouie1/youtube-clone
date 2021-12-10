@@ -58,7 +58,7 @@
 	border-left: none;
 	cursor: pointer;
 	justify-content: center;
-	background-color: red;
+	background-color: yellow;
 	color: white;
 	transition: 0.3s ease-in;
 }
