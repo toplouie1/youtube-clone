@@ -9,7 +9,7 @@ export default class Video extends Component {
 				<Youtube
 					className="videoss"
 					videoId={this.props.match.params.id}
-					opts={{ height: "600", width: "1000" }}
+					opts={{ height: "700", width: "1000" }}
 				/>
 				<div className="commentsContainer">
 					<form className="inputContainer">
