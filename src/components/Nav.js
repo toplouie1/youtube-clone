@@ -7,7 +7,7 @@ export default class Nav extends Component {
 		return (
 			<nav>
 				<Link className="logo" exact to="/">
-					Youtube
+					YouTube
 				</Link>
 				<Link to="/">Home</Link>
 				<Link to="/About">About</Link>

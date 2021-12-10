@@ -1,18 +1,28 @@
 nav {
 	display: flex;
 	justify-content: flex-start;
-	background-color: red;
+	background-color: #262323;
+
+	border-radius: 10px;
 }
 .logo {
+	border-radius: 10px;
 	font-size: 22px;
-	padding: 20px 15px;
-	margin-top: -4px;
+	padding: 16px 20px;
+	background-color: #262323;
+	top: 0;
 }
-
+img {
+	width: 20px;
+}
 nav a {
 	color: rgb(255, 255, 255);
 	text-decoration: none;
 	padding: 20px 15px;
-	background-color: red;
+	background-color: #262323;
 	font-weight: 400;
+	transition: 0.3s ease-in;
+}
+nav a:hover {
+	color: tomato;
 }

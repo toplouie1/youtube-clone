@@ -6,7 +6,10 @@ export default class About extends Component {
 		return (
 			<div className="about-main">
 				<h1>Youtube-clone</h1>
-				<p>This will be the description place</p>
+				<p>
+					This is a Youtube-clone that is done by the member's below making use
+					of the Youtube Api and the react-youtube.
+				</p>
 
 				<div className="about-contains">
 					<div className="members-about">
@@ -21,7 +24,10 @@ export default class About extends Component {
 						<div>Hello! My name is Charlie and I am a banana! 🍌</div>
 
 						<h5>Deborah Campos</h5>
-						<div>deborah bio ...</div>
+						<div>
+							My name is Deborah and I am a software developer fellow at
+							Pursuit.
+						</div>
 					</div>
 					<div className="github-links">
 						<h2>GitHub Links</h2>
