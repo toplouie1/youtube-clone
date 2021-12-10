@@ -24,32 +24,40 @@ export default class Video extends Component {
 								className="name"
 								placeholder="Name..."
 								type="text"
+								onInput={this.nameComments}
 								id="Name"
 								name="search"
 							/>
 						</label>
+						<br />
 						<br />
 						<label className="labels" htmlFor="Comment">
 							Comment
 							<br />
 							<input
 								className="name"
+								onInput={this.nameComments}
 								placeholder="..."
 								type="text"
 								id="Comment"
-								name="Comment"
+								name="comment"
 							/>
 						</label>
+						<br />
 						<br />
 						<button className="submitVideo" type="submit">
 							Search
 						</button>
 
-						<div className="commentsSection">Mo</div>
+						<div className="commentsSection">Name : Mo</div>
 						<div className="commentsSection">Amazing video..</div>
-						<div className="commentsSection">JO</div>
+						<br />
+
+						<div className="commentsSection">Name : JO</div>
 						<div className="commentsSection">Wow ... great quality </div>
-						<div className="commentsSection">KO</div>
+						<br />
+
+						<div className="commentsSection">Name : KO</div>
 						<div className="commentsSection">who is watching ?</div>
 					</form>
 				</div>

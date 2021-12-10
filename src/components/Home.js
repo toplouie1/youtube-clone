@@ -9,6 +9,7 @@ export default class Home extends Component {
 		this.state = {
 			searchValue: "",
 			fetchdata: [],
+			toggle: true,
 		};
 	}
 
@@ -17,6 +18,7 @@ export default class Home extends Component {
 			searchValue: e.target.value,
 		});
 	};
+  
 	fetchSearchVid = (e) => {
 		e.preventDefault();
 
@@ -29,16 +31,12 @@ export default class Home extends Component {
 			.then((data) => {
 				this.setState({
 					fetchdata: data.items,
-					searchValue: ""
+					searchValue: "",
+          toggle: false
 				});
 			});
 	};
 
-	viewVideo=(e)=>{
-		this.setState({
-			vidId: e.id.videoId
-		});
-	}
 
 	render() {
 
@@ -46,9 +44,14 @@ export default class Home extends Component {
 			return (
 				<div>
 					<div className="vid">
+        
 						<div onClick={()=>this.props.updateVideoObject(vid)}>
 							<Link to={`/Video/${vid.id.videoId}`}>
-								<img src={vid.snippet.thumbnails.high.url} alt ={vid.snippet.title}/>
+								<img
+									className="thumbnail-container"
+									src={vid.snippet.thumbnails.high.url}
+									alt={vid.snippet.title}
+								/>
 							</Link>
 						</div>
 					</div>
@@ -78,8 +81,13 @@ export default class Home extends Component {
 				</form>
 
 				</div>
+				<div
+					id="no-results"
+					style={{ display: this.state.toggle ? "block" : "none" }}
+				>
+					{"No Search Results Yet! Please submit a search above!"}
+				</div>
 				<div id="display-container" className="video-container">
-					{/* <div id="no-results">{this.state.noResults}</div> */}
 					<div id="video">{videos}</div>
 				</div>
 			</div>

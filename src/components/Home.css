@@ -1,11 +1,16 @@
 #display-container {
 	text-align: center;
 }
+* {
+	color: white;
+}
+
 #video {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	margin: 10px;
+	margin: 1 0px;
 }
+
 .vid {
 	margin: 20px;
 	margin-top: 2rem;
@@ -16,51 +21,52 @@
 	text-align: center;
 }
 #no-results {
-	border-style: solid 1px;
-	border-color: black;
 	border-radius: 5px;
-	width: 475px;
+	width: 575px;
 	height: 30px;
-	/* position: fixed; */
-	top: 10%;
-	left: 30%;
-	transform: translate(-18%, -30%);
 	background-color: grey;
-	padding: 20px;
+	padding: 10px;
 	justify-content: center;
-	margin-left: 300px;
+	margin-left: 31.4%;
+	opacity: 0.8;
+}
+
+#after-results {
+	display: none;
 }
 
 .search {
+	color: rgb(17, 16, 16);
 	border-style: solid 1px;
-	border-radius: 5px;
 	width: 475px;
 	height: 30px;
-	top: 10%;
-	left: 30%;
 	justify-content: center;
 	text-align: left;
-	/* position: absolute; */
-	top: 10%;
-	left: 30%;
-	border: 1px solid rgb(211, 197, 197);
+	padding: 2px;
+	border: 1px solid grey;
+	background-color: white;
 }
 
 .submit {
-	border-radius: 5px;
 	width: 110px;
 	height: 36px;
-	/* position: absolute; */
-	top: 9.7%;
-	left: 64.9%;
-	border: none;
+	border: 1px solid grey;
+	border-left: none;
 	cursor: pointer;
 	justify-content: center;
-	background-color: red;
-	color: white;
+	background-color: yellow;
+	color: black;
+	transition: 0.3s ease-in;
 }
-#form-container{
+.submit:hover {
+	color: white;
+	background-color: rgb(17, 16, 16);
+}
+
+#form-container {
+	top: 0;
 	justify-content: center;
-	margin-left: 300px;;
+	margin-left: 30%;
 	padding: 25px;
+	padding-top: 100px;
 }
