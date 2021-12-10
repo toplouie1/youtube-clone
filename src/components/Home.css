@@ -56,13 +56,13 @@
 	border: none;
 	cursor: pointer;
 	justify-content: center;
-	background-color: red;
+	background-color: #262323;
+
 	color: white;
 	transition: 0.3s ease-in;
 }
 .submit:hover {
-	color: black;
-	background-color: tomato;
+	background-color: red;
 }
 #form-container {
 	justify-content: center;
