@@ -5,7 +5,7 @@ export default class About extends Component {
 	render() {
 		return (
 			<div className="about-main">
-				<h1>Youtube-clone</h1>
+				<h1>YouTube-clone</h1>
 				<p>
 					This is a Youtube-clone that is done by the member's below making use
 					of the Youtube Api and the react-youtube.

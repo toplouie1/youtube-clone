@@ -45,6 +45,7 @@ export default class Home extends Component {
 						<div>
 							<Link to={`/Video/${vid.id.videoId}`}>
 								<img
+									className="thumbnail-container"
 									src={vid.snippet.thumbnails.high.url}
 									alt={vid.snippet.title}
 								/>

@@ -1,12 +1,16 @@
 #display-container {
 	text-align: center;
 }
+* {
+	color: white;
+}
 
 #video {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	margin: 10px;
+	margin: 1 0px;
 }
+
 .vid {
 	margin: 20px;
 	margin-top: 2rem;
@@ -17,55 +21,55 @@
 	text-align: center;
 }
 #no-results {
-	border-color: black;
 	border-radius: 5px;
 	width: 575px;
 	height: 30px;
-	top: 10%;
-	left: 60%;
-	background-color: #e3e2e2;
+	background-color: grey;
 	padding: 10px;
 	justify-content: center;
-	margin-left: 320px;
-	opacity: 0.6;
+	margin-left: 624px;
+	opacity: 0.8;
 }
+
 #after-results {
 	display: none;
 }
 
 .search {
+	color: rgb(17, 16, 16);
 	border-style: solid 1px;
-	border-radius: 5px;
 	width: 475px;
 	height: 30px;
-	top: 10%;
-	left: 30%;
 	justify-content: center;
 	text-align: left;
 	top: 10%;
 	left: 30%;
-	border: 1px solid rgb(211, 197, 197);
+	padding: 2px;
+	border: 1px solid grey;
+	background-color: white;
 }
 
 .submit {
-	border-radius: 5px;
 	width: 110px;
 	height: 36px;
 	top: 9.7%;
 	left: 64.9%;
-	border: none;
+	border: 1px solid grey;
+	border-left: none;
 	cursor: pointer;
 	justify-content: center;
-	background-color: #262323;
-
+	background-color: red;
 	color: white;
 	transition: 0.3s ease-in;
 }
 .submit:hover {
-	background-color: red;
+	background-color: rgb(17, 16, 16);
 }
+
 #form-container {
+	top: 0;
 	justify-content: center;
-	margin-left: 300px;
+	margin-left: 600px;
 	padding: 25px;
+	padding-top: 100px;
 }
