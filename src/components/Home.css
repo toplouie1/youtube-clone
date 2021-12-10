@@ -1,6 +1,7 @@
 #display-container {
 	text-align: center;
 }
+
 #video {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -16,17 +17,17 @@
 	text-align: center;
 }
 #no-results {
-	border-style: solid 1px;
 	border-color: black;
 	border-radius: 5px;
-	width: 475px;
+	width: 575px;
 	height: 30px;
 	top: 10%;
 	left: 60%;
-	background-color: grey;
-	padding: 20px;
+	background-color: #e3e2e2;
+	padding: 10px;
 	justify-content: center;
-	margin-left: 300px;
+	margin-left: 320px;
+	opacity: 0.6;
 }
 #after-results {
 	display: none;
@@ -57,6 +58,11 @@
 	justify-content: center;
 	background-color: red;
 	color: white;
+	transition: 0.3s ease-in;
+}
+.submit:hover {
+	color: black;
+	background-color: tomato;
 }
 #form-container {
 	justify-content: center;
