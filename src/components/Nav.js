@@ -8,7 +8,6 @@ export default class Nav extends Component {
 		return (
 			<nav>
 				<Link className="logo" exact to="/">
-					BananaTube
 					<img src={logo} alt="logo" />
 					<div className="logo-name">BananaTube</div>
 				</Link>
