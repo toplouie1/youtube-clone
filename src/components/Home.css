@@ -55,7 +55,7 @@
 	cursor: pointer;
 	justify-content: center;
 	background-color: yellow;
-	color: white;
+	color: black;
 	transition: 0.3s ease-in;
 }
 .submit:hover {
@@ -69,4 +69,3 @@
 	padding: 25px;
 	padding-top: 100px;
 }
-

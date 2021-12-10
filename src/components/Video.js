@@ -45,11 +45,15 @@ export default class Video extends Component {
 							Search
 						</button>
 
-						<div className="commentsSection">Mo</div>
+						<div className="commentsSection">Name : Mo</div>
 						<div className="commentsSection">Amazing video..</div>
-						<div className="commentsSection">JO</div>
+						<br />
+
+						<div className="commentsSection">Name : JO</div>
 						<div className="commentsSection">Wow ... great quality </div>
-						<div className="commentsSection">KO</div>
+						<br />
+
+						<div className="commentsSection">Name : KO</div>
 						<div className="commentsSection">who is watching ?</div>
 					</form>
 				</div>
