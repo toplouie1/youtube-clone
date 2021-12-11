@@ -3,63 +3,74 @@ import "./Video.css";
 import Youtube from "react-youtube";
 
 export default class Video extends Component {
-	render() {
+	constructor() {
+		super();
+		this.state = {
+			comments: "",
+			theComments: "",
+		};
+	}
 
-		console.log(this.props)
+	nameComments = (e) => {
+		this.setState({
+			comments: e.target.value,
+		});
+	};
+	addingComments = (e) => {
+		e.preventDefault();
+		this.setState({
+			theComments: this.state.comments,
+			comments: "",
+		});
+	};
+
+	render() {
+		let addingCommentsPage = () => {
+			return (
+				<div className="commentsSection">Name : {this.state.theComments}</div>
+			);
+		};
+
+		console.log(this.props);
 		return (
-			
 			<div>
 				<Youtube
 					className="videoss"
 					videoId={this.props.match.params.id}
 					opts={{ height: "600", width: "1000" }}
 				/>
-				<div id="title-placeholder">{Object.keys(this.props.videoObject).length? this.props.videoObject.snippet.title: ""}</div>
+				<div id="title-placeholder">
+					{Object.keys(this.props.videoObject).length
+						? this.props.videoObject.snippet.title
+						: ""}
+				</div>
 				<div className="commentsContainer">
-					<form className="inputContainer">
-						<label className="labels" htmlFor="Name">
-							Name
-							<br />
-							<input
-								className="name"
-								placeholder="Name..."
-								type="text"
-								onInput={this.nameComments}
-								id="Name"
-								name="search"
-							/>
-						</label>
-						<br />
-						<br />
+					<form onSubmit={this.addingComments} className="inputContainer">
 						<label className="labels" htmlFor="Comment">
-							Comment
 							<br />
 							<input
 								className="name"
 								onInput={this.nameComments}
-								placeholder="..."
+								value={this.state.comments}
+								placeholder="Add a public comment..."
 								type="text"
 								id="Comment"
 								name="comment"
+								autoComplete="off"
 							/>
 						</label>
-						<br />
-						<br />
-						<button className="submitVideo" type="submit">
-							Search
+						<button
+							className="onAdd"
+							conClick={this.addingCommentsPage}
+							type="submit"
+						>
+							Add
 						</button>
 
-						<div className="commentsSection">Name : Mo</div>
-						<div className="commentsSection">Amazing video..</div>
 						<br />
-
-						<div className="commentsSection">Name : JO</div>
-						<div className="commentsSection">Wow ... great quality </div>
 						<br />
-
-						<div className="commentsSection">Name : KO</div>
-						<div className="commentsSection">who is watching ?</div>
 					</form>
+					<div>{addingCommentsPage}</div>
 				</div>
 			</div>
 		);

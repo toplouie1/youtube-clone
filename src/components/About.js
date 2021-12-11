@@ -10,15 +10,14 @@ export default class About extends Component {
 					This is a Youtube-clone that is done by the member's below making use
 					of the Youtube Api and the react-youtube.
 				</p>
-
 				<div className="about-contains">
 					<div className="members-about">
 						<h2>Members</h2>
 
 						<h5>Nima Sherpa</h5>
 						<div>
-							Hey my name is nima sherpa I m an aspiring software developer on
-							my way to change the world.
+							Hey my name is Nima sherpa I m an Software developer I love
+							working on project and implementing new ideas .
 						</div>
 						<h5>Charlie Moran</h5>
 						<div>Hello! My name is Charlie and I am a banana! 🍌</div>

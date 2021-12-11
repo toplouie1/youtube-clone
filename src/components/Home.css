@@ -7,12 +7,15 @@
 
 #video {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	margin: 1 0px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin: 0px;
+}
+.thumbnail-container {
+	width: 90%;
 }
 
 .vid {
-	margin: 20px;
+	margin: 0px;
 	margin-top: 2rem;
 }
 .title {
@@ -36,7 +39,7 @@
 }
 
 .search {
-	color: rgb(17, 16, 16);
+	color: rgb(255, 255, 255);
 	border-style: solid 1px;
 	width: 475px;
 	height: 30px;
@@ -44,7 +47,11 @@
 	text-align: left;
 	padding: 2px;
 	border: 1px solid grey;
-	background-color: white;
+	background-color: rgb(28, 23, 23);
+	transition: 0.3s ease-in;
+}
+.search:hover {
+	border-color: black;
 }
 
 .submit {
@@ -64,7 +71,6 @@
 }
 
 #form-container {
-	top: 0;
 	justify-content: center;
 	margin-left: 30%;
 	padding: 25px;
