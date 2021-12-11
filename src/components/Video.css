@@ -1,29 +1,16 @@
 .name {
-	border-style: solid 1px;
-	border-radius: 5px;
-	width: 666px;
-	height: 30px;
+	width: 60%;
+	height: 40px;
 	justify-content: center;
 	text-align: left;
-	border: 1px solid rgb(211, 197, 197);
-	margin: 10px;
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 1e-9px;
-}
-
-.submitVideo {
-	border-radius: 5px;
-	margin: 10px;
-	width: 110px;
-	height: 36px;
 	border: none;
-	cursor: pointer;
-	justify-content: center;
-	background-color: rgb(49, 44, 145);
-	color: white;
+	border-bottom: 1px solid rgb(211, 197, 197);
+	margin: 10px;
+	transition: 0.3s ease-in;
 }
-
+.name:hover {
+	border-color: black;
+}
 .labels {
 	margin-left: 10px;
 }
@@ -36,13 +23,23 @@
 	margin: 20px;
 }
 .commentsContainer {
-	justify-content: center;
-	display: flex;
-	justify-content: center;
+	margin-left: 40px;
 }
 .videoss {
 	width: 100%;
 }
-#title-placeholder{
-	text-align: center;
+#title-placeholder {
+	margin-top: 40px;
+	font-size: larger;
+	margin-left: 45px;
+}
+.onAdd {
+	height: 60px;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.3s ease-in;
+}
+.onAdd:hover {
+	color: rgb(60, 58, 58);
 }
