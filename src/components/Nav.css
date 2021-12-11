@@ -3,7 +3,7 @@
 }
 nav {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	background-color: #282828;
 	width: 100%;
 	border-bottom: 1px solid grey;
@@ -22,10 +22,6 @@ nav {
 }
 .logo img {
 	width: 30px;
-}
-#theAnchor {
-	margin-top: 20px;
-	margin-right: 20px;
 }
 nav a {
 	color: rgb(255, 255, 255);

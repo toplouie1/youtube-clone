@@ -7,6 +7,7 @@ export default class Video extends Component {
 		super();
 		this.state = {
 			comments: "",
+			firstName: "",
 			theComments: [
 				{ comments: "Amazing video", title: "Chris" },
 				{ comments: "Nice That was crazy !!", title: "Manny" },
@@ -17,16 +18,17 @@ export default class Video extends Component {
 
 	nameComments = (e) => {
 		this.setState({
-			comments: e.target.value,
+			[e.target.name]: e.target.value,
 		});
 	};
 	addingComments = (e) => {
 		e.preventDefault();
 		this.setState({
 			comments: "",
+			firdtName: "",
 			theComments: [
 				...this.state.theComments,
-				{ comments: this.state.comments, title: "super" },
+				{ comments: this.state.comments, title: this.state.firstName },
 			],
 		});
 	};
@@ -54,6 +56,19 @@ export default class Video extends Component {
 				</div>
 				<div className="commentsContainer">
 					<form onSubmit={this.addingComments} className="inputContainer">
+						<label className="labels" htmlFor="firstName">
+							<br />
+							<input
+								className="name"
+								onInput={this.nameComments}
+								value={this.state.firdtName}
+								placeholder="Name"
+								type="text"
+								id="name"
+								name="firstName"
+								autoComplete="off"
+							/>
+						</label>
 						<label className="labels" htmlFor="Comment">
 							<br />
 							<input
@@ -63,10 +78,11 @@ export default class Video extends Component {
 								placeholder="Add a public comment..."
 								type="text"
 								id="Comment"
-								name="comment"
+								name="comments"
 								autoComplete="off"
 							/>
 						</label>
+
 						<button className="onAdd" type="submit">
 							Add
 						</button>
