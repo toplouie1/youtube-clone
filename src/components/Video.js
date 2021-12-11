@@ -7,7 +7,11 @@ export default class Video extends Component {
 		super();
 		this.state = {
 			comments: "",
-			theComments: "",
+			theComments: [
+				{ comments: "Amazing video", title: "Chris" },
+				{ comments: "Nice That was crazy !!", title: "Manny" },
+				{ comments: "Love it  !!", title: "Mark" },
+			],
 		};
 	}
 
@@ -19,17 +23,23 @@ export default class Video extends Component {
 	addingComments = (e) => {
 		e.preventDefault();
 		this.setState({
-			theComments: this.state.comments,
 			comments: "",
+			theComments: [
+				...this.state.theComments,
+				{ comments: this.state.comments, title: "super" },
+			],
 		});
 	};
 
 	render() {
-		let addingCommentsPage = () => {
+		let commentsContainer = this.state.theComments.map((each) => {
 			return (
-				<div className="commentsSection">Name : {this.state.theComments}</div>
+				<div key="each">
+					<h3>Name : {each.title}</h3>
+					<div>Comment -- {each.comments}</div>
+				</div>
 			);
-		};
+		});
 
 		console.log(this.props);
 		return (
@@ -59,18 +69,16 @@ export default class Video extends Component {
 								autoComplete="off"
 							/>
 						</label>
-						<button
-							className="onAdd"
-							conClick={this.addingCommentsPage}
-							type="submit"
-						>
+						<button className="onAdd" type="submit">
 							Add
 						</button>
-
 						<br />
 						<br />
 					</form>
-					<div>{addingCommentsPage}</div>
+					<br />
+					<br />
+
+					<div>{commentsContainer}</div>
 				</div>
 			</div>
 		);
