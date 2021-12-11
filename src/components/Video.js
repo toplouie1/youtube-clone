@@ -25,7 +25,7 @@ export default class Video extends Component {
 		e.preventDefault();
 		this.setState({
 			comments: "",
-			firdtName: "",
+			firstName: "",
 			theComments: [
 				...this.state.theComments,
 				{ comments: this.state.comments, title: this.state.firstName },
@@ -61,7 +61,7 @@ export default class Video extends Component {
 							<input
 								className="name"
 								onInput={this.nameComments}
-								value={this.state.firdtName}
+								value={this.state.firstName}
 								placeholder="Name"
 								type="text"
 								id="name"
