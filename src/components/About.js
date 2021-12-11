@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./About.css";
+import logo from "../Octocat.png";
 
 export default class About extends Component {
 	render() {
@@ -32,16 +33,19 @@ export default class About extends Component {
 						<h2>GitHub Links</h2>
 						<a target="blank" href="https://github.com/toplouie1">
 							Nima GitHub
+							<img className="gitlogo" src={logo} alt="logo" />
 						</a>
 						<br />
 						<br />
 						<a target="blank" href="https://github.com/CharlieMoran">
 							Charlie GitHub
+							<img className="gitlogo" src={logo} alt="logo" />
 						</a>
 						<br />
 						<br />
 						<a target="blank" href="https://github.com/DeborahCampos1">
 							Deborah GitHub
+							<img className="gitlogo" src={logo} alt="logo" />
 						</a>
 					</div>
 				</div>
