@@ -32,20 +32,17 @@ export default class About extends Component {
 					<div className="github-links">
 						<h2>GitHub Links</h2>
 						<a target="blank" href="https://github.com/toplouie1">
-							Nima GitHub
-							<img className="gitlogo" src={logo} alt="logo" />
+							Nima GitHub <img className="gitlogo" src={logo} alt="logo" />
 						</a>
 						<br />
 						<br />
 						<a target="blank" href="https://github.com/CharlieMoran">
-							Charlie GitHub
-							<img className="gitlogo" src={logo} alt="logo" />
+							Charlie GitHub <img className="gitlogo" src={logo} alt="logo" />
 						</a>
 						<br />
 						<br />
 						<a target="blank" href="https://github.com/DeborahCampos1">
-							Deborah GitHub
-							<img className="gitlogo" src={logo} alt="logo" />
+							Deborah GitHub <img className="gitlogo" src={logo} alt="logo" />
 						</a>
 					</div>
 				</div>

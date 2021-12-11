@@ -50,3 +50,11 @@ h5 {
 a {
 	color: tomato;
 }
+.gitlogo {
+	position: relative;
+	width: 40px;
+	transition: 0.5s;
+}
+.gitlogo:hover {
+	transform: scale(1.1);
+}
