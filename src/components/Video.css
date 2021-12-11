@@ -43,9 +43,6 @@
 .onAdd:hover {
 	color: rgb(60, 58, 58);
 }
-.gitlogo {
-	width: 40px;
-}
 a:hover {
 	transition: 0.3s ease-in;
 	color: white;
