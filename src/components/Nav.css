@@ -3,7 +3,7 @@
 }
 nav {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	background-color: #282828;
 	width: 100%;
 	border-bottom: 1px solid grey;
@@ -15,6 +15,10 @@ nav {
 	padding: 16px 20px;
 	background-color: #282828;
 	font-family: 800;
+}
+#theAnchor {
+	margin-top: 20px;
+	margin-right: 20px;
 }
 .logo-name {
 	top: 3px;
