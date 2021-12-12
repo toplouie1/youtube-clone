@@ -2,6 +2,8 @@
 	background-color: #282828;
 }
 nav {
+	top: 0;
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	background-color: #282828;
