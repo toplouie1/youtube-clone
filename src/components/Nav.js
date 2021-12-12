@@ -7,7 +7,7 @@ export default class Nav extends Component {
 	render() {
 		return (
 			<nav>
-				<div>
+				<div id="container-logo">
 					<Link className="logo" exact to="/">
 						<img src={logo} alt="logo" />
 						<div className="logo-name">BananaTube</div>

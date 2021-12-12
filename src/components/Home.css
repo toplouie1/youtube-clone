@@ -31,7 +31,8 @@
 	padding: 10px;
 	justify-content: center;
 	margin-left: 31.4%;
-	opacity: 0.8;
+
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
 
 #after-results {
@@ -74,7 +75,7 @@
 	justify-content: center;
 	margin-left: 30%;
 	padding: 25px;
-	padding-top: 100px;
+	padding-top: 40px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -86,6 +87,7 @@
 		width: 80%;
 	}
 	.search {
+		margin-right: 10px;
 		width: 150px;
 	}
 	#no-results {
