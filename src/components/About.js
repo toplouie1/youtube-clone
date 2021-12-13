@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import logo from "../Octocat.png";
+import banana from "../cutebanana.png"
 
 function About() {
 	return (
@@ -35,7 +36,7 @@ function About() {
 					<br />
 					<br />
 					<a target="blank" href="https://github.com/CharlieMoran">
-						Charlie GitHub <img className="gitlogo" src={logo} alt="logo" />
+						Charlie GitHub <img className="gitlogo" src={banana} alt="logo" />
 					</a>
 					<br />
 					<br />
