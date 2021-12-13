@@ -22,28 +22,32 @@ export default class Video extends Component {
 	};
 	addingComments = (e) => {
 		e.preventDefault();
-		this.setState({
-			comments: "",
-			firstName: "",
-			theComments: [
-				...this.state.theComments,
-				{ comments: this.state.comments, title: this.state.firstName },
-			],
-		});
+
+		if (this.state.comments && this.state.firstName){
+			this.setState({
+				comments: "",
+				firstName: "",
+				theComments: [
+					...this.state.theComments,
+					{ comments: this.state.comments, title: this.state.firstName },
+				],
+			});
+	
+		}
 	};
 
 	render() {
 		let commentsContainer = this.state.theComments.map((each) => {
-			if(each.title !== "" || each.comments !== ""){
+			
 				return (
 					<div key="each">
 						<h3>Name : {each.title}</h3>
 						<div>Comment -- {each.comments}</div>
 					</div>
 				);
-			}
 			
 		});
+		console.log(this.state.theComments)
 		return (
 			<div className="">
 				<Youtube
