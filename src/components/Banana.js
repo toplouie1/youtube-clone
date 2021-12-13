@@ -1,10 +1,5 @@
 import React, { Component } from "react";
 import "./Banana.css";
-import { Link } from "react-router-dom";
-
-
-
-
 
 export default class Banana extends Component {
     constructor(){
