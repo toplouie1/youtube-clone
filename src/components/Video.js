@@ -9,7 +9,6 @@ export default class Video extends Component {
 			comments: "",
 			firstName: "",
 			theComments: [
-				{ comments: "Amazing video", title: "Chris" },
 				{ comments: "Nice That was crazy !!", title: "Manny" },
 				{ comments: "Love it  !!", title: "Mark" },
 			],
@@ -43,7 +42,7 @@ export default class Video extends Component {
 			);
 		});
 		return (
-			<div>
+			<div className="">
 				<Youtube
 					className="videoss"
 					videoId={this.props.match.params.id}

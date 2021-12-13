@@ -7,28 +7,32 @@ import Video from "./components/Video";
 import { Component } from "react";
 
 class App extends Component {
-	constructor(){
-	super()
+	constructor() {
+		super();
 		this.state = {
-			videoObject: {}
-		}
+			videoObject: {},
+		};
 	}
-updateVideoObject=(vidContainer)=>{
-	this.setState({
-		videoObject: vidContainer
-	})
-}
+	updateVideoObject = (vidContainer) => {
+		this.setState({
+			videoObject: vidContainer,
+		});
+	};
 
-	render(){
-
+	render() {
 		return (
 			<div>
 				<Nav />
 				<Switch>
 					<Route exact path="/">
-						<Home updateVideoObject={this.updateVideoObject}/>
+						<Home updateVideoObject={this.updateVideoObject} />
 					</Route>
-					<Route path="/Video/:id" render={(props) => (<Video {...props} videoObject={this.state.videoObject} />)} />
+					<Route
+						path="/Video/:id"
+						render={(props) => (
+							<Video {...props} videoObject={this.state.videoObject} />
+						)}
+					/>
 					<Route path="/About">
 						<About />
 					</Route>
@@ -39,7 +43,6 @@ updateVideoObject=(vidContainer)=>{
 			</div>
 		);
 	}
-	
 }
 
 export default App;
