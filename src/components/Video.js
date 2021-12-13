@@ -34,12 +34,15 @@ export default class Video extends Component {
 
 	render() {
 		let commentsContainer = this.state.theComments.map((each) => {
-			return (
-				<div key="each">
-					<h3>Name : {each.title}</h3>
-					<div>Comment -- {each.comments}</div>
-				</div>
-			);
+			if(each.title !== "" && each.comments !== ""){
+				return (
+					<div key="each">
+						<h3>Name : {each.title}</h3>
+						<div>Comment -- {each.comments}</div>
+					</div>
+				);
+			}
+			
 		});
 		return (
 			<div className="">
@@ -83,7 +86,7 @@ export default class Video extends Component {
 						</label>
 
 						<button className="onAdd" type="submit">
-							Add
+							Add Comment
 						</button>
 						<br />
 						<br />
