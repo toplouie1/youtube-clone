@@ -34,7 +34,7 @@ export default class Video extends Component {
 
 	render() {
 		let commentsContainer = this.state.theComments.map((each) => {
-			if(each.title !== "" && each.comments !== ""){
+			if(each.title !== "" || each.comments !== ""){
 				return (
 					<div key="each">
 						<h3>Name : {each.title}</h3>
