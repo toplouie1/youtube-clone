@@ -23,7 +23,7 @@ export default class Video extends Component {
 	addingComments = (e) => {
 		e.preventDefault();
 
-		if (this.state.comments && this.state.firstName){
+		if (this.state.comments && this.state.firstName) {
 			this.setState({
 				comments: "",
 				firstName: "",
@@ -32,22 +32,19 @@ export default class Video extends Component {
 					{ comments: this.state.comments, title: this.state.firstName },
 				],
 			});
-	
 		}
 	};
 
 	render() {
 		let commentsContainer = this.state.theComments.map((each) => {
-			
-				return (
-					<div key="each">
-						<h3>Name : {each.title}</h3>
-						<div>Comment -- {each.comments}</div>
-					</div>
-				);
-			
+			return (
+				<div key="each">
+					<h3>Name : {each.title}</h3>
+					<div>Comment -- {each.comments}</div>
+				</div>
+			);
 		});
-		console.log(this.state.theComments)
+		console.log(this.state.theComments);
 		return (
 			<div className="">
 				<Youtube
@@ -90,7 +87,7 @@ export default class Video extends Component {
 						</label>
 
 						<button className="onAdd" type="submit">
-							Add Comment
+							Comment
 						</button>
 						<br />
 						<br />
